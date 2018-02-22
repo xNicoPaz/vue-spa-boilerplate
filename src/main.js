@@ -27,7 +27,9 @@ Vue.use(Vuetify);
 */
 
 window.sharedData = {
-	title: 'Soportify'
+	title: 'Soportify',
+	drawer: false,
+	dialog: false,
 };
 
 /*
