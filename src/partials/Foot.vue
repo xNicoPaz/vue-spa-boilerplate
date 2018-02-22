@@ -1,6 +1,6 @@
 <template>
 	<v-footer app fixed>
-		<span>&copy; 2017 Nicolás Paz</span>
+		<span>&copy; 2018 Nicolás Paz</span>
 	</v-footer>
 </template>
 

@@ -1,21 +1,18 @@
 export default class Url{
 	static apiBaseUrl(){
-		return 'http:\/\/api.gp.local/api';
+		return 'http:\/\/my.api.domain/api/';
 	}
 
-	static memberDetailsPath(userId){
-		return '/members/' + userId;
+	/*
+	Example use of this class for retrieving paths
+	and URLs to request to the API
+
+	static exampleResourceDetailsUrl(resourceId){
+		return this.apiBaseUrl + 'example-resource/' + resourceId;
 	}
 
-	static memberEditPath(userId){
-		return '/members/' + userId + '/edit';
-	}
-	
-	static memberDeleteUrl(userId){
-		return this.apiBaseUrl() + '/members/' + userId + '/delete';
+	static exampleResourceDeleteUrl(resourceId){
+		return this.apiBaseUrl + 'example-resource/' + resourceId + '/delete';
 	}	
-
-	static memberDetailsUrl(userId){
-		return this.apiBaseUrl() + this.memberDetailsPath(userId);
-	}
+	*/
 }
