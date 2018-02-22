@@ -4,32 +4,17 @@ import VueRouter from 'vue-router';
 let routes = [
 	{
 		path: '/',
+		component: require('./views/Login.vue').default,
+		props: {
+			//OAuth2
+			clientId: '',
+			clientSecret: ''
+		},
+	},
+	{
+		path: '/home',
 		component: require('./views/Home.vue').default,
 		props: true,
-	},
-	{
-		path: '/members',
-		component: require('./views/members/Index.vue').default,
-		props: true,
-	},
-	{
-		path: '/members/create',
-		component: require('./views/members/Create.vue').default,
-		props: true,
-	},
-	{
-		path: '/members/:id',
-		component: require('./views/members/Details.vue').default,
-		props: {
-			isEdit: false,
-		}
-	},
-	{
-		path: '/members/:id/edit',
-		component: require('./views/members/Details.vue').default,
-		props: {
-			isEdit: true,
-		}
 	}
 ];
 
